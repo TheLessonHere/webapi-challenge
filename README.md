@@ -25,14 +25,19 @@ In this challenge, create a web API around the following resources: `Projects` a
 Demonstrate your understanding of this Sprint's concepts by answering the following free-form questions. Edit this document to include your answers after each question. Make sure to leave a blank line above and below your answer so it is clear and easy to read by your project manager.
 
 - [ ] Mention two parts of Express that you learned about this week.
+I learned about Express routing, and Express middlewares/custom middlewares.
 
 - [ ] Describe Middleware?
+A middleware is a function that a CRUD request must go through before getting to the API. They can be used for things like validation and security.
 
 - [ ] Describe a Resource?
+A resource is a piece of data on the server that the user is trying to access.
 
 - [ ] What can the API return to help clients know if a request was successful?
+Response statuses, and error messages.
 
 - [ ] How can we partition our application into sub-applications?
+Through the use of dotenv, developers can maintain different logic on their own terminals. I'm not sure if that fits the description of partitioning.
 
 ## Project Setup
 

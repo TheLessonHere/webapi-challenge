@@ -12,3 +12,17 @@ I need this code, just don't know where, perhaps should make some middleware, do
 
 Go code!
 */
+require('dotenv').config();
+
+const port = process.env.PORT || 5000;
+
+const server = require('./server');
+
+const actionRouters = require('./routers/actionRouters');
+const projectRouters = require('./routers/projectRouters');
+server.use('/api/actions', actionRouters);
+server.use('/api/projects', projectRouters);
+
+server.listen(port, () => {
+    console.log(`Server listening on port ${port}`);
+});
