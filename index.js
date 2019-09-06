@@ -18,10 +18,10 @@ const port = process.env.PORT || 5000;
 
 const server = require('./server');
 
-// const userRouter = require('./users/userRouter');
-// const postRouter = require('./posts/postRouter');
-// server.use('/api/users', userRouter);
-// server.use('/api/posts', postRouter);
+const actionRouters = require('./routers/actionRouters');
+const projectRouters = require('./routers/projectRouters');
+server.use('/api/actions', actionRouters);
+server.use('/api/projects', projectRouters);
 
 server.listen(port, () => {
     console.log(`Server listening on port ${port}`);

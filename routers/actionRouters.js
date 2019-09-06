@@ -123,3 +123,5 @@ router.delete('/:id', (req, res) => {
         res.status(500).json({ error: "Server error validating action id." })
     })
 })
+
+module.exports = router;
